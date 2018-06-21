@@ -96,8 +96,8 @@ metadata:
   name: {{ template "{% .AppName %}.{% .Name %}.name" . }}
   labels:
     kubed: {{ template "{% .AppName %}.name" . }}
-	component: {% .Name %}
-	generator: rust
+    component: {% .Name %}
+    generator: rust
 spec:
   selector:
     matchLabels:
@@ -127,8 +127,8 @@ metadata:
   name: {{ template "{% .AppName %}.{% .Name %}.name" . }}
   labels:
     kubed: {{ template "{% .AppName %}.name" . }}
-	component: {% .Name %}
-	generator: rust
+    component: {% .Name %}
+    generator: rust
 spec:
   selector:
     kubed: {{ template "{% .AppName %}.name" . }}
